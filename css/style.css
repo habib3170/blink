@@ -52,6 +52,11 @@ body {
 }
 .items {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 25px
+}
+.item {
+    display: flex;
     align-items: center;
     color: #333;
     font-size: 16px;
@@ -63,13 +68,32 @@ body {
     border: 1px solid #dee2e6;
     transition: all 0.3s ease;
 }
-.items span {
+.item span {
     flex-grow: 1;
     text-align: center;
     margin-left: 15px;
 }
-.items:hover {
+.item:hover {
     background-color: transparent;
     color: #fff;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+.social-media a > img {
+    max-width: 30px;
+}
+.social-media a:hover > img {
+    max-width: 32px;
 }
 
